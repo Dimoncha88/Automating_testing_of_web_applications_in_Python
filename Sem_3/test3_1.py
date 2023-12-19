@@ -1,0 +1,44 @@
+from testpage import OperationsHelper
+import logging
+import yaml
+import time
+
+with open('./testdata.yaml', encoding='utf-8') as f:
+    testdata = yaml.safe_load(f)
+
+
+def test_step_1(browser):
+    logging.info("Test1 starting")
+    testpage = OperationsHelper(browser)
+    testpage.go_to_site()
+    testpage.enter_login("test")
+    testpage.enter_pass("test")
+    testpage.click_login_button()
+    assert testpage.get_error_text() == '401'
+
+
+def test_step_2(browser):
+    logging.info("Test2 starting")
+    testpage = OperationsHelper(browser)
+    testpage.go_to_site()
+    testpage.enter_login(testdata['login'])
+    testpage.enter_pass(testdata['password'])
+    testpage.click_login_button()
+    assert testpage.get_success_text() == f'Hello, {testdata["login"]}'
+
+
+def test_step_3(browser):
+    logging.info("Test3 starting")
+    testpage = OperationsHelper(browser)
+    testpage.go_to_site()
+    testpage.enter_login(testdata['login'])
+    testpage.enter_pass(testdata['password'])
+    testpage.click_login_button()
+    testpage.click_contact_button()
+    time.sleep(testdata['sleep_time'])
+    testpage.enter_contact_name('Test')
+    testpage.enter_contact_mail('test@test.ru')
+    testpage.enter_contact_text('Some text')
+    testpage.click_contact_button_send()
+    time.sleep(testdata['sleep_time'])
+    assert testpage.get_alert_text() == f'{testdata["alert_text"]}'

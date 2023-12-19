@@ -1,0 +1,13 @@
+2023-12-20 01:27:23 INFO ====== WebDriver manager ======
+2023-12-20 01:27:30 INFO Get LATEST chromedriver version for google-chrome
+2023-12-20 01:27:31 INFO Get LATEST chromedriver version for google-chrome
+2023-12-20 01:27:32 INFO Driver [C:\Users\Dmitry\.wdm\drivers\chromedriver\win64\120.0.6099.109\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-20 01:27:33 INFO Test3 starting
+2023-12-20 01:27:33 INFO Senf 111_4 of element //*[@id="login"]/div[1]/label/input
+2023-12-20 01:27:35 INFO Senf 2ff7cba6c5 of element //*[@id="login"]/div[2]/label/input
+2023-12-20 01:27:35 INFO Click login button
+2023-12-20 01:27:35 INFO Click Contact button
+2023-12-20 01:27:40 INFO Send Test of element //*[@id="contact"]/div[1]/label/input
+2023-12-20 01:27:40 INFO Send test@test.ru of element //*[@id="contact"]/div[2]/label/input
+2023-12-20 01:27:40 INFO Send Some text of element //*[@id="contact"]/div[3]/label/span/textarea
+2023-12-20 01:27:40 INFO Click Contact Us button
