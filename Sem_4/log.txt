@@ -1,0 +1,95 @@
+2023-12-21 23:02:18 WARNING Forcing soap:address location to HTTPS
+2023-12-21 23:02:18 WARNING Forcing soap:address location to HTTPS
+2023-12-21 23:02:18 INFO ====== WebDriver manager ======
+2023-12-21 23:02:25 INFO Get LATEST chromedriver version for google-chrome
+2023-12-21 23:02:26 INFO Get LATEST chromedriver version for google-chrome
+2023-12-21 23:02:26 INFO Driver [C:\Users\Dmitry\.wdm\drivers\chromedriver\win64\120.0.6099.109\chromedriver-win32/chromedriver.exe] found in cache
+2023-12-21 23:02:29 INFO Test1 starting
+2023-12-21 23:02:30 INFO Sent test to element login form 
+2023-12-21 23:02:31 INFO Sent test to element password form 
+2023-12-21 23:02:31 INFO Clicked login button
+2023-12-21 23:02:32 INFO Find text 401 in field error text
+2023-12-21 23:02:35 INFO Test2 starting
+2023-12-21 23:02:35 INFO Sent 111_4 to element login form 
+2023-12-21 23:02:36 INFO Sent 2ff7cba6c5 to element password form 
+2023-12-21 23:02:36 INFO Clicked login button
+2023-12-21 23:02:39 INFO Find text Hello, 111_4 in field success text
+2023-12-21 23:02:39 INFO Test3 starting
+2023-12-21 23:02:39 INFO Sent 111_4 to element login form 
+2023-12-21 23:02:49 ERROR Find element exception
+Traceback (most recent call last):
+  File "C:\Users\Dmitry\Documents\Обучение\Погружение в Python\new project\Sem_4\BaseApp.py", line 36, in find_element
+    element = WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[1]/label/input')
+Stacktrace:
+	GetHandleVerifier [0x00D06EE3+174339]
+	(No symbol) [0x00C30A51]
+	(No symbol) [0x00946FF6]
+	(No symbol) [0x00979876]
+	(No symbol) [0x00979C2C]
+	(No symbol) [0x009ABD42]
+	(No symbol) [0x00997054]
+	(No symbol) [0x009AA104]
+	(No symbol) [0x00996DA6]
+	(No symbol) [0x00971034]
+	(No symbol) [0x00971F8D]
+	GetHandleVerifier [0x00DA4B1C+820540]
+	sqlite3_dbdata_init [0x00E653EE+653550]
+	sqlite3_dbdata_init [0x00E64E09+652041]
+	sqlite3_dbdata_init [0x00E597CC+605388]
+	sqlite3_dbdata_init [0x00E65D9B+656027]
+	(No symbol) [0x00C3FE6C]
+	(No symbol) [0x00C383B8]
+	(No symbol) [0x00C384DD]
+	(No symbol) [0x00C25818]
+	BaseThreadInitThunk [0x76FA0419+25]
+	RtlGetAppContainerNamedObjectPath [0x772666DD+237]
+	RtlGetAppContainerNamedObjectPath [0x772666AD+189]
+
+2023-12-21 23:02:49 ERROR Element ('xpath', '//*[@id="login"]/div[1]/label/input') not found
+2023-12-21 23:02:49 INFO Sent 2ff7cba6c5 to element password form 
+2023-12-21 23:03:00 ERROR Find element exception
+Traceback (most recent call last):
+  File "C:\Users\Dmitry\Documents\Обучение\Погружение в Python\new project\Sem_4\BaseApp.py", line 36, in find_element
+    element = WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[2]/label/input')
+Stacktrace:
+	GetHandleVerifier [0x00D06EE3+174339]
+	(No symbol) [0x00C30A51]
+	(No symbol) [0x00946FF6]
+	(No symbol) [0x00979876]
+	(No symbol) [0x00979C2C]
+	(No symbol) [0x009ABD42]
+	(No symbol) [0x00997054]
+	(No symbol) [0x009AA104]
+	(No symbol) [0x00996DA6]
+	(No symbol) [0x00971034]
+	(No symbol) [0x00971F8D]
+	GetHandleVerifier [0x00DA4B1C+820540]
+	sqlite3_dbdata_init [0x00E653EE+653550]
+	sqlite3_dbdata_init [0x00E64E09+652041]
+	sqlite3_dbdata_init [0x00E597CC+605388]
+	sqlite3_dbdata_init [0x00E65D9B+656027]
+	(No symbol) [0x00C3FE6C]
+	(No symbol) [0x00C383B8]
+	(No symbol) [0x00C384DD]
+	(No symbol) [0x00C25818]
+	BaseThreadInitThunk [0x76FA0419+25]
+	RtlGetAppContainerNamedObjectPath [0x772666DD+237]
+	RtlGetAppContainerNamedObjectPath [0x772666AD+189]
+
+2023-12-21 23:03:00 ERROR Element ('xpath', '//*[@id="login"]/div[2]/label/input') not found
+2023-12-21 23:03:00 INFO Clicked login button
+2023-12-21 23:03:00 INFO Clicked contact button button
+2023-12-21 23:03:03 INFO Sent Test to element contact name form 
+2023-12-21 23:03:04 INFO Sent test@test.ru to element contact mail form 
+2023-12-21 23:03:04 INFO Sent Some text to element contact text form 
+2023-12-21 23:03:04 INFO Clicked contact button send button
+2023-12-21 23:03:07 INFO Test4 starting
+2023-12-21 23:03:08 INFO Test5 starting

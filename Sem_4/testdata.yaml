@@ -1,0 +1,15 @@
+address: 'https://test-stand.gb.ru'
+browser: chrome
+sleep_time: 3
+login: '111_4'
+password: '2ff7cba6c5'
+title: 'one new post'
+description: 'another post'
+content: 'jabsgisaiug aiargiailli'
+alert_text: 'Form successfully submitted'
+path: 'https://speller.yandex.net/services/spellservice?WSDL'
+word: 'компьютер'
+error_word: 'кeмпьютер'
+path_posts: 'https://test-stand.gb.ru/api/posts'
+site_login: 'https://test-stand.gb.ru/gateway/login'
+id_check: 93422
